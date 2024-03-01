@@ -1,0 +1,9 @@
+{
+  "grading": "isolated",
+  "difficulty": "beginner",
+  "duration": 1,
+  "description": "Installing Debian on VirtualBox vm",
+  "title": "Installing Debian on a Virtual Machine",
+  "slug": "installing-debian-on-a-virtual-machine",
+  "exercisesPath":"./steps"
+}
