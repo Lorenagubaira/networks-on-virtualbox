@@ -183,6 +183,15 @@ return data.split("---------")
   
 }
 
+/**
+ * 
+ * @param {WritableStream} stream 
+ * @returns {String}
+ */
+function streamToText(stream){
+  
+}
+
 app.use("/public",express.static("./public"))
 
 app.get("/",(req,res)=>{
@@ -196,17 +205,23 @@ app.get("/",(req,res)=>{
 })
 
 app.post("/", async (req,res)=>{
-  if (req.files.file) {
-    fs.readFile(req.files.file.name, 'utf-8', (err, data) => {
-      if (err) throw err;
-      let machinesInfo=parseFileData(data)
-      fs.writeFileSync('vminfo.json', JSON.stringify(machinesInfo), 'utf8');
-      res.status(200).send({message:"JSON saved successfully"})
+  try {    
+    console.log("Recieving files")
+    console.log(req.files.file.path)
+    fs.readFile(req.files.file.path, 'utf-8', (err, data) => {
+      if(err){
+        console.error(err)
+        res.status(400).send({message:"Error on file"})    
+      }else{
+        let machinesInfo=parseFileData(data)
+        fs.writeFileSync('vminfo.json', JSON.stringify(machinesInfo), 'utf8');
+        console.log("Data ready: ", machinesInfo)
+        res.status(200).send({message:"JSON saved successfully"})
+      }
     });
-    //console.log("Data ready: ", machinesInfo)
-  } else {
+  } catch (error) {
     console.log("Didn't receive the file");
-    res.status(400).send({message:"Didn't receive the file"})
+    res.status(400).send({message:"Didn't receive the file"})    
   }
 })
 

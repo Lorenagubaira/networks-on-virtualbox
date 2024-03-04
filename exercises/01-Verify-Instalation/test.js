@@ -1,12 +1,14 @@
-test('Output should not be undefined',async () => {
+test('Output should not be undefined', async () => {
+  let fs = require("fs")
   require('dotenv').config();
-  //const gettingMachineStatus = require("./app")
-  //let output=await gettingMachineStatus()
-  let data;
+  let vms;
   if (fs.existsSync('vminfo.json')) {
-    data = JSON.parse(fs.readFileSync('vminfo.json', 'utf8'));
+    vms = JSON.parse(fs.readFileSync('vminfo.json', 'utf8'));
   } else {
     throw new Error('vminfo.json not found. Please run the BAT file on your local machine.');
   }
-  expect(data).not.toBe(undefined);
+  let winMachine = vms.find(vm => /^Windows 10*/.test(vm.ostype))
+  expect(winMachine).toBeDefined();
+  expect(winMachine.cpus).toBe("2");
+  expect(winMachine.memory).toBe("2048");
 })
