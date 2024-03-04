@@ -21,3 +21,5 @@ __pycache__/
 
 node_modules
 .env
+vminfo.json
+public/data.txt

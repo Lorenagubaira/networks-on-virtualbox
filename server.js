@@ -1,15 +1,13 @@
 const express=require("express")
 const app=express()
 const cors=require("cors")
-const dotenv=require("dotenv")
 const formidable = require('express-formidable');
-
-dotenv.config()
+const fs = require('fs');
+require("dotenv").config()
 
 app.use(cors())
 app.use(formidable());
 app.use(express.urlencoded({ extended: true }))
-//app.use(express.json())
 /**
  * @typedef {object} machineInfo
  * @property {string} name
@@ -185,20 +183,27 @@ return data.split("---------")
   
 }
 
-
-var machinesInfo=[]
+app.use("/public",express.static("./public"))
 
 app.get("/",(req,res)=>{
-  res.status(200).send(machinesInfo)
+  console.log("Testing VMInfo");
+  if (fs.existsSync('vminfo.json')) {
+    const jsonData = fs.readFileSync('vminfo.json', 'utf8');
+    res.send(jsonData);
+  } else {
+    res.status(404).send('JSON not found');
+  }
 })
-app.post("/",(req,res)=>{
+
+app.post("/", async (req,res)=>{
   if (req.files.file) {
-    const fs = require('fs');
     fs.readFile(req.files.file.name, 'utf-8', (err, data) => {
       if (err) throw err;
-      machinesInfo=parseFileData(data)
+      let machinesInfo=parseFileData(data)
+      fs.writeFileSync('vminfo.json', JSON.stringify(machinesInfo), 'utf8');
+      res.status(200).send({message:"JSON saved successfully"})
     });
-    res.status(200).send({message:"ok"})
+    //console.log("Data ready: ", machinesInfo)
   } else {
     console.log("Didn't receive the file");
     res.status(400).send({message:"Didn't receive the file"})
