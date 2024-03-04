@@ -1,7 +1,6 @@
 test('Output should not be undefined',async () => {
+  let fs=require("fs")
   require('dotenv').config();
-  //const gettingMachineStatus = require("./app")
-  //let output=await gettingMachineStatus()
   let data;
   if (fs.existsSync('vminfo.json')) {
     data = JSON.parse(fs.readFileSync('vminfo.json', 'utf8'));
