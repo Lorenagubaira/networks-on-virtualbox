@@ -7,7 +7,6 @@
 	"customizations": {
 		"vscode": {
 			"settings": {
-				"editor.defaultFormatter": "esbenp.prettier-vscode",
 				"workbench.editorAssociations": {   
 					"*.md": "vscode.markdown.preview.editor"
 				}
@@ -20,13 +19,13 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [3001],
-	// "portsAttributes": {
-	// 	"3001": {
-	// 	  "label": "node_server",
-	// 	  "onAutoForward": "notify"
-	// 	}
-	// },
+	"forwardPorts": [3001],
+	"portsAttributes": {
+		"3001": {
+		  "label": "node_server",
+		  "onAutoForward": "notify"
+		}
+	},
 
 	"onCreateCommand": "npm i jest@24.8.0 -g && npm i @learnpack/learnpack@2.1.35 -g && learnpack plugins:install @learnpack/node@1.1.1 && npm i",
 
