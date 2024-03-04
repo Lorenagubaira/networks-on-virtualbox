@@ -171,7 +171,7 @@ app.use(express.urlencoded({ extended: true }))
 function parseFileData(data){
 return data.split("---------")
   .filter(line=>!!line)  
-  .map(vmData=>vmData.trim().split("__")
+  .map(vmData=>vmData.trim().split("\n")
     .reduce((output,line)=>{
       let [key,value]=line.split(/[=:]/)
       if (!key || !value) return output
