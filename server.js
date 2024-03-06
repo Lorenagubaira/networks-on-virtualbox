@@ -183,14 +183,6 @@ return data.split("---------")
   
 }
 
-/**
- * 
- * @param {WritableStream} stream 
- * @returns {String}
- */
-function streamToText(stream){
-  
-}
 
 app.use("/public",express.static("./public"))
 
