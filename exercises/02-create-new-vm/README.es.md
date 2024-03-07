@@ -6,11 +6,13 @@ En ésta práctica aprenderás a crear una maquina virtual con VirtualBox, y lue
 
 Visita la web oficial de [VirtualBox](https://www.virtualbox.org/wiki/Downloads) para obtener el instalador para windows. La instalación es tan fácil como cualquier otra aplicación de windows. Al ejecutar el instalador te aparecerá un asistente que te guiará durante el proceso.
 
-1. Inicia el instalador
+### 1. Crea una nueva máquina Virtual
 
-![Inicio de instalador](../../.learn/assets/vbinstall1.png)
+Al abrir VirtualBox podrás ver el icono de "Añadir" marcado con una cruz verde
 
-2. Instala todas las características
+![Inicio de instalador](../../.learn/assets/createvm0.png)
+
+### 2. Instala todas las características
 
 ![Inicio de instalador](../../.learn/assets/vbinstall2.png)
 
