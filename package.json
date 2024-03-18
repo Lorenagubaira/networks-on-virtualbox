@@ -1,5 +1,5 @@
 {
-  "name": "installing-debian-vm",
+  "name": "installing-windows-vm",
   "version": "1.0.0",
   "description": "You have initialized the exercises with grading=`incremental`; meaning that your students will complete one single tutorial with clear and autograded steps from beginning to end.",
   "main": "index.js",

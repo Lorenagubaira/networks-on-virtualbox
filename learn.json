@@ -1,14 +1,14 @@
 {
   "language": "node",
   "title": {
-    "us": "Installing Debian on a Virtual Machine",
-    "es": "Installing Debian on a Virtual Machine"
+    "us": "Installing Windows on a Virtual Machine",
+    "es": "Instalar Windows en una máquina virtual"
   },
   "preview": "https://github.com/4GeeksAcademy/javascript-functions-exercises-tutorial/blob/master/.learn/assets/preview.png?raw=true",
-  "slug": "installing-debian-on-a-virtual-machine",
+  "slug": "installing-windows-on-a-virtual-machine",
   "description": {
-    "us": "Installing Debian on VirtualBox vm",
-    "es": "Installing Debian on VirtualBox vm"
+    "us": "Installing Windows on VirtualBox virtual machine",
+    "es": "Instalar Windows en una máquina virtual de VirtualBox"
   },
   "repository": "https://github.com/4GeeksAcademy/javascript-functions-exercises-tutorial",
   "duration": 5,
@@ -16,9 +16,8 @@
   "videoSolutions": true,
   "projectType": "tutorial",
   "bugsLink": "https://github.com/learnpack/learnpack/issues/new",
-  "skills": ["algorithms"],
+  "skills": ["cybersecurity"],
   "graded": true,
-  "exercisesPath": "./steps",
   "editor": {
     "version": "3.1.9"
   }

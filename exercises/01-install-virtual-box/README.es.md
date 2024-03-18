@@ -1,20 +1,20 @@
 # Instalación de máquinas virtuales
 
-En ésta práctica aprenderás a crear una maquina virtual con VirtualBox, y luego a instalar un sistema operativo en ella. Estas maquinas serán tu laboratorio a lo largo del curso, en ellas podrás explorar de manera segura sin afectar el propio sistema operativo de tu máquina. Lo peor que puede pasar es que tengas que instalar la maquina virtual de nuevo, pero tu computadora estará a salvo.
+En ésta práctica aprenderás a crear una maquina virtual con VirtualBox, y luego a instalar un sistema operativo en ella. Estas maquinas serán tu laboratorio a lo largo del curso, en ellas podrás explorar de manera segura sin afectar el propio sistema operativo de tu máquina. Lo peor que puede pasar es que tengas que instalar la maquina virtual de nuevo, pero tu computadora siempre estará a salvo.
 
 ## Instalación en Windows
 
 Visita la web oficial de [VirtualBox](https://www.virtualbox.org/wiki/Downloads) para obtener el instalador para windows. La instalación es tan fácil como cualquier otra aplicación de windows. Al ejecutar el instalador te aparecerá un asistente que te guiará durante el proceso.
 
-1. Inicia el instalador
+### 1. Inicia el instalador
 
 ![Inicio de instalador](../../.learn/assets/vbinstall1.png)
 
-2. Instala todas las características
+### 2. Instala todas las características
 
 ![Inicio de instalador](../../.learn/assets/vbinstall2.png)
 
-3. Avanza con el boton "Yes" o "Next" hasta finalizar
+### 3. Avanza con el boton "Yes" o "Next" hasta finalizar
 
 ![Inicio de instalador](../../.learn/assets/vbinstall3.png)
 
