@@ -219,8 +219,6 @@ app.post("/", async (req,res)=>{
 
 //app.listen(3001,()=>{console.log("Listening")})
 app.listen(process.env.HOST_PORT,()=>{
-  console.log("Listening on "+ process.env.HOST_PORT)
-  // https://crispy-goggles-x5775px4qgp3v4r7-3000.app.github.dev/
   let backendUrl=`https://${process.env.CODESPACE_NAME}-${process.env.HOST_PORT}.app.github.dev`
   console.log("Your URL for the verification script is: "+backendUrl)
 })
