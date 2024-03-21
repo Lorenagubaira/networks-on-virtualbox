@@ -1,3 +1,3 @@
-## Installing Debian on a vm
+# `03` Instalación de máquinas virtuales
 
 {{publicUrl}}

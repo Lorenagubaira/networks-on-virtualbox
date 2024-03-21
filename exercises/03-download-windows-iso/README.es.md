@@ -1,4 +1,4 @@
-# Descarga un ISO de Windows 10
+# `02` Descarga un ISO de Windows 10
 
 ## Instalación en Windows
 

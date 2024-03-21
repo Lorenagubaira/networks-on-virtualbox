@@ -1,4 +1,14 @@
-# `01` Primer Ejercicio
+# `04` Valida tu instalación
+
+## Requerimientos
+
+### - CURL
+
+Es una herramienta que permite hacer peticiones a una página web desde la terminal de tu sistema, también puede realizar otras funciones, pero ésta es la que nos ocupa en este caso.
+
+### - Script de validación
+
+Es un script que hemos desarrollado a la medida de esta práctica. Se encarga de tomar la información de VirtualBox y enviarla para hacer la validación. Primero debes descargar el script y ejecutarlo el te solicitará 
 
 Hemos creado este primer ejercicio como ejemplo. Lo puedes ubicar en la carpeta `./01-hello-world`.
 
