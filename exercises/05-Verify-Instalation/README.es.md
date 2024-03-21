@@ -24,3 +24,5 @@ intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
 tutorial: "https://www.youtube.com/watch?v=YkgkThdzX-8"
 ---
 ```
+
+https://curl.se/windows/

@@ -8,6 +8,9 @@ require("dotenv").config()
 app.use(cors())
 app.use(formidable());
 app.use(express.urlencoded({ extended: true }))
+
+const backendUrl=`https://${process.env.CODESPACE_NAME}-${process.env.HOST_PORT}.app.github.dev`
+
 /**
  * @typedef {object} machineInfo
  * @property {string} name
@@ -219,6 +222,6 @@ app.post("/", async (req,res)=>{
 
 //app.listen(3001,()=>{console.log("Listening")})
 app.listen(process.env.HOST_PORT,()=>{
-  let backendUrl=`https://${process.env.CODESPACE_NAME}-${process.env.HOST_PORT}.app.github.dev`
+  
   console.log("Your URL for the verification script is: "+backendUrl)
 })
