@@ -8,7 +8,7 @@ Es una herramienta que permite hacer peticiones a una página web desde la termi
 
 ### - Script de validación
 
-Es un script que hemos desarrollado a la medida de esta práctica. Se encarga de tomar la información de VirtualBox y enviarla para hacer la validación. Primero debes descargar el script y ejecutarlo el te solicitará 
+Es un script que hemos desarrollado a la medida de esta práctica. Se encarga de tomar la información de VirtualBox y enviarla para hacer la validación. Primero debes descargar el script y ejecutarlo el te solicitará una URL que puedes encontrar en el archivo `url.txt` que se encuentra en esta práctica.
 
 Hemos creado este primer ejercicio como ejemplo. Lo puedes ubicar en la carpeta `./01-hello-world`.
 

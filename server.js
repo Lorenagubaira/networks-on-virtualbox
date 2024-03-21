@@ -200,7 +200,7 @@ app.get("/",(req,res)=>{
   } else {
     res.status(404).send(`
       <h1>${backendUrl}</h1>
-      <hr>
+      <hr
       <h3>Ready to send the validation data</h3>
       <h3>Listo para enviar la información de validación</h3>
     `);
@@ -230,6 +230,19 @@ app.post("/", async (req,res)=>{
 
 //app.listen(3001,()=>{console.log("Listening")})
 app.listen(process.env.HOST_PORT,()=>{
-  console.clear()  
+  let text=`
+  /* Your url is:
+  * -----------------------------------
+  * ${backendUrl}
+  * ----------------------------------- 
+  */
+ console.log(${backendUrl})
+  `
+  console.clear()
+  try {
+    fs.writeFileSync('excercises/05-Verify-instalation/app.js', text, 'utf8');    
+  } catch (error) {
+    console.log(text)
+  }
   console.log("Your URL for the verification script is: "+ backendUrl)
 })
