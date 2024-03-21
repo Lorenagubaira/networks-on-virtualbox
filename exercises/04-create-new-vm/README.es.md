@@ -20,11 +20,11 @@ En la lista "Imagen ISO" deberás seleccionar la opcion "Otro" y agregar el arch
 
 ### 3. Instalación desatendida
 
-En este paso puedes personalizar configuraciones de la maquina que estas creando y que se aplicarán automaticamente durante la instalacion, para que esta no se vea interrumpida en su proceso. Al finalizar el proceso deberás elegir un par de opciones de privacidad, pero ya el trabajo pesado estará hecho.
+En este paso puedes personalizar configuraciones de la maquina que estas creando y que se aplicarán automáticamente durante la instalación, para que esta no se vea interrumpida en su proceso. Al finalizar el proceso deberás elegir un par de opciones de privacidad, pero ya el trabajo pesado estará hecho.
 
 ![Inicio de instalador](../../.learn/assets/createvm2.png)
 
-### 3. Configuracion de hardware
+### 3. Configuración de hardware
 
 Aquí es donde eliges de cuanta memoria y procesador va a disponer tu maquina. Es importante asignar lo necesario para un funcionamiento optimo, sin comprometer el propio desempeño de la maquina anfitrión.
 
@@ -32,7 +32,8 @@ Aquí es donde eliges de cuanta memoria y procesador va a disponer tu maquina. E
 
 ![Inicio de instalador](../../.learn/assets/createvm3.png)
 
-### 3. Configuracion de almacenamiento
+### 3. Configuración de almacenamiento
 
 ![Inicio de instalador](../../.learn/assets/createvm4.png)
  
+ Cuando presiones el botón "Terminar" se abrirá una ventana donde verás tu maquina virtual. Inmediatamente empieza el proceso de instalación, y gracias a la instalación desatendida solo tendrás que esperar hasta que el proceso termine y tendrás tu nueva maquina virtual con Windows 10.

@@ -31,3 +31,5 @@ Es lo que necesitarás para crear tu máquina virtual
 ### 5. Elije donde guardar tu archivo ISO
 
 ![Descarga windows iso](../../.learn/assets/downloadWin6.png)
+
+Tratándose de un archivo tan pesado, tendrás que esperar un tiempo hasta que la descarga termine. Una vez terminada tendrás el ISO para crear tu máquina virtual.
