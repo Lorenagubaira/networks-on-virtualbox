@@ -209,7 +209,7 @@ app.get("/",(req,res)=>{
 
 app.post("/", async (req,res)=>{
   try {    
-    console.log("Recieving files")
+    console.log("Receiving files")
     console.log(req.files.file.path)
     fs.readFile(req.files.file.path, 'utf-8', (err, data) => {
       if(err){
@@ -240,7 +240,7 @@ app.listen(process.env.HOST_PORT,()=>{
   `
   console.clear()
   try {
-    fs.writeFileSync('excercises/05-Verify-instalation/app.js', text, 'utf8');    
+    fs.writeFileSync('./excercises/05-Verify-instalation/app.js', text, 'utf8');    
   } catch (error) {
     console.log(text)
   }

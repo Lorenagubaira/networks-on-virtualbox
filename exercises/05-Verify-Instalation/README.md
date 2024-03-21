@@ -1,50 +1,28 @@
-# `01` Receive data from your computer
-Congratulations for reaching this exercise! Blablabla
+# `04` Validate your installation
 
-Run a server in the codespace to be able to receive information from your local machine.
+## 1. CURL
 
-## Instructions
+It is a tool that allows you to make requests to a web page from the terminal of your system, it can also perform other functions, but this is the one that concerns us in this case.
 
-1. Open a new terminal in your codespace
-![Open terminal](../../.learn/assets/open-terminal.png)
+For windows you must download the tool from [this link]((https://curl.se/windows/)) and then install it before proceeding to the next step.
 
-2. Run the following command: NOTA PARA EL EDITOR: EN EL DEVCONTAINER.JSON YA CONFIGURE PARA QUE EL SERVIDOR server.js corra en background, es cuestión de que guardes el archivo en local y lo uses en el test, los primeros dos pasos podrías eliminarlos y solo hacer al estudiante cambiar la visibilidad del puerto, el paso 3, que corra el BAT en local y que corra los tests
-```bash
-node test-server.js 
-```
-3. Change the port visibility
-![Ports](../../.learn/assets/ports.png)
-![Change visibility](../../.learn/assets/port-visibility.png)
+## 2. Validation Script
 
-3. Explain the user how to run the BAT file to receive the data in the server
+It is a script that we have developed to the measure of this practice. It is in charge of taking the information from VirtualBox and send it to do the validation. First you must download the script and run it, it will ask you for a URL that you can find in the `url.txt` file found in this practice.
 
+[Downlad the script for valication on Windows here.](https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine/blob/master/.learn/assets/sendData.zip)
+Remember extracting the file before executing it.
 
+![Script Windows](../../.learn/assets/script-win.png)
 
+## 3. Running the test
 
+Once the script is successfully executed, you will be able to run the test to validate your Windows installation in VirtualBox.
 
+![Script Windows](../../.learn/assets/script-test.png)
 
+## 4. Done!
 
+If you passed the tests, you have already installed a virtual machine with windows. This will be your safe place to do experiments and tests during the course.
 
-
-
-
-
-
-## Video compatibility
-
-If you want to include some video introduction for each exercise, add a `intro` property in the markdown frontmatter of the README.md for that particular exercise:
-
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
-```
-
-You can also add a video solution for each exercise by adding a `tutorial` property on the markdown frontmatter of it's README.md:
-
-```markdown
----
-intro: "https://www.youtube.com/watch?v=YkgkThdzX-8"
-tutorial: "https://www.youtube.com/watch?v=YkgkThdzX-8"
----
-```
+If you have any problems do not hesitate to contact a mentor or the other support channels offered by 4Geeks.
