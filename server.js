@@ -193,9 +193,16 @@ app.get("/",(req,res)=>{
   console.log("Testing VMInfo");
   if (fs.existsSync('vminfo.json')) {
     const jsonData = fs.readFileSync('vminfo.json', 'utf8');
-    res.send(jsonData);
+    res.send(`
+      <h1>${backendUrl}</h1>
+      <code>${jsonData}</code>
+    `);
   } else {
-    res.status(404).send('JSON not found');
+    res.status(404).send(`
+      <h1>${backendUrl}</h1>
+      <h3>Ready to send the validation data</h3>
+      <h3>Listo para enviar la información de validación</h3>
+    `);
   }
 })
 
@@ -222,6 +229,6 @@ app.post("/", async (req,res)=>{
 
 //app.listen(3001,()=>{console.log("Listening")})
 app.listen(process.env.HOST_PORT,()=>{
-  
+  console.clear()  
   console.log("Your URL for the verification script is: "+backendUrl)
 })
