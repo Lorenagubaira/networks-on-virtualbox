@@ -242,7 +242,7 @@ app.listen(process.env.HOST_PORT,()=>{
   try {
     fs.writeFileSync('./excercises/05-Verify-instalation/app.js', text, 'utf8');    
   } catch (error) {
-    console.log(text)
+    //console.log(text)
   }
   console.log("Your URL for the verification script is: "+ backendUrl)
 })

@@ -6,6 +6,14 @@ It is a tool that allows you to make requests to a web page from the terminal of
 
 For windows you must download the tool from [this link]((https://curl.se/windows/)) and then install it before proceeding to the next step.
 
+## 2. Enable public port
+
+In order for learnpack to receive the information that will be send from your machine, is necessary to enable public access to the port, witch for safety reasons comes private by default.
+
+For this select the "Ports" tab in the lower panel of codespace, there you'll see the ports that are beign used. You'll need to publish the port `3001` and for that right click on the port, go to the menu `Port visibility` and select the `Public` option.
+
+![Public port](../../.learn/assets/public-ports.png)
+
 ## 2. Validation Script
 
 It is a script that we have developed to the measure of this practice. It is in charge of taking the information from VirtualBox and send it to do the validation. First you must download the script and run it, it will ask you for a URL that you can find in the `url.txt` file found in this practice.
