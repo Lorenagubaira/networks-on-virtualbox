@@ -12,7 +12,14 @@
 *Estas instrucciones [están disponibles en 🇪🇸 español](https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine/blob/main/README.es.md) :es:*
 <!-- endhide -->
 
-Install a Windows computer using VirtualBox
+In this exercise, you will install VirtualBox on your computer and use it to create a virtual machine with Windows 10. VirtualBox will be your lab throughout the course, where you will have virtual machines with different operating systems where you can experiment in a controlled environment without affecting your main machine.
+
+The following steps in this exercise are:
+
+1. VirtualBox installation
+2. Windows download
+3. Creation of the virtual machine
+4. Verification of the installation
 
 <!-- hide -->
 ## Before you start... some related tutorials:
