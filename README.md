@@ -23,7 +23,7 @@ Install a Windows computer using VirtualBox
 
 You can open these exercises in just a few seconds by clicking: [Open in Codespaces](https://codespaces.new/?repo=4GeeksAcademy/installing-windows-on-virtual-machine) (recommended) or [Open in Gitpod](https://gitpod.io#https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine.git).
 
-> Once you have VSCode open the LearnPack exercises should start automatically. If exercises don't run automatically you can try typing on your terminal: `$ learnpack start`
+> Once you have VSCode open the LearnPack exercises should start automatically. If exercises don't run automatically, you can try typing on your terminal: `$ learnpack start`
 
 ## Local Installation
 
@@ -32,7 +32,7 @@ Clone this repository in your local environment ([Clone this repository](https:/
 1. Install LearnPack, the package manager for learning tutorials and the node compiler plugin for learnpack, make sure you also have node.js 14:
 
 ```bash
-$ npm i learnpack -g
+$ npm i @learnpack/learnpack -g
 $ learnpack plugins:install learnpack-node
 ```
 
@@ -42,27 +42,26 @@ $ learnpack plugins:install learnpack-node
 $ npm i jest@24.8.0 -g
 $ learnpack start
 ```
-<!-- endhide -->
 
-> Note: The exercises have automatic grading, but it's very rigid and strict, my recommendation is to not take the tests too serious and use them only as a suggestion, or you may get frustrated.
+<!-- endhide -->
 
 ## How are the exercises organized?
 
-Each exercise is a small React application containing the following files:
+Each exercise contains the following files:
 
-1. **app.js:** represents the entry JavaScript file that will be executed by the computer.
-2. **README.md:** contains exercise instructions.
-3. **test.js:** contains the testing script for the exercise (you don't have to open this file).
+1. **README.md:** contains exercise instructions.
+2. **test.js:** contains the testing script for the exercise (you don't have to open this file).
+3. **app.js:** ignore this file.
 
 ## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
-1. [Alejandro Sanchez (alesanchezr)](https://github.com/alesanchezr), contribution: (coder) 💻  (idea) 🤔, (build-tests) ⚠️ , (pull-request-review) 👀 (build-tutorial) ✅ (documentation) 📖
+1. [Arnaldo Perez (arnaloperez)](https://github.com/arnaloperez) contribution: (build-tutorial) ✅, (documentation) 📖
+  
+2. [Alejandro Sanchez (alesanchezr)](https://github.com/alesanchezr),  contribution: (bug reports) 🐛
 
-2. [Paolo (plucodev)](https://github.com/plucodev), contribution: (bug reports) 🐛, contribution: (coder), (translation) 🌎
-
-3. [Ricardo Rodriguez (RickRodriguez8080)](https://github.com/RickRodriguez8080) contribution: (build-tutorial) ✅, (documentation) 📖
+3. [Lorena Gubaira (lorenagubaira)](https://github.com/lorenagubaira), contribution: (bug reports) 🐛, contribution: (coder), (translation) 🌎
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind are welcome!
 
