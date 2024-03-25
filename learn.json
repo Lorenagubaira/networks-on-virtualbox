@@ -17,7 +17,7 @@
   "projectType": "tutorial",
   "bugsLink": "https://github.com/learnpack/learnpack/issues/new",
   "skills": ["cybersecurity"],
-  "graded": true,
+  "graded": true, 
   "editor": {
     "version": "3.1.9"
   }
