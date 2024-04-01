@@ -22,54 +22,65 @@ Los siguientes pasos en esta práctica son:
 4. Verificación la instalación
 
 <!-- hide -->
-## Before you start... some related tutorials:
 
-> We need you! These exercises are built and maintained in collaboration with contributors such as yourself. If you find any bugs or misspellings please contribute and/or report them.
+#### Antes de empezar...
 
-## One click installation (recommended):
+> ¡Te necesitamos! Estos ejercicios se crean y mantienen en colaboración con personas como tú. Si encuentras algún error o falta de ortografía, contribuye y/o repórtalo.
 
-You can open these exercises in just a few seconds by clicking: [Open in Codespaces](https://codespaces.new/?repo=4GeeksAcademy/installing-windows-on-virtual-machine) (recommended) or [Open in Gitpod](https://gitpod.io#https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine.git).
+## Instalación en un clic (recomendado)
 
-> Once you have VSCode open the LearnPack exercises should start automatically. If exercises don't run automatically, you can try typing on your terminal: `$ learnpack start`
+Puedes empezar estos ejercicios en pocos segundos haciendo clic en: [Abrir en Codespaces](https://codespaces.new/?repo=4GeeksAcademy/html-forms-tutorial-exercises) (recomendado) o [Abrir en Gitpod](https://gitpod.io#https://github.com/4GeeksAcademy/html-forms-tutorial-exercises.git).
 
-## Local Installation
+> Una vez ya tengas abierto VSCode, los ejercicios de LearnPack deberían empezar automáticamente, si esto no sucede puedes intentar empezar los ejercicios escribiendo este comando en tu terminal: `$ learnpack start`
 
-Clone this repository in your local environment ([Clone this repository](https://4geeks.com/how-to/github-clone-repository)) and follow the steps below:
+## Instalación local:
 
-1. Install LearnPack, the package manager for learning tutorials and the node compiler plugin for learnpack, make sure you also have node.js 14:
+Clona el repositorio en tu ambiente local y sigue los siguientes pasos:
+
+1. Instala LearnPack, el package manager para tutoriales de aprendizaje y el HTML compiler plugin para LearnPack, asegúrate también de tener node.js 14+:
 
 ```bash
-$ npm i @learnpack/learnpack -g
-$ learnpack plugins:install learnpack-node
+$ npm i learnpack -g
+$ learnpack plugins:install learnpack-html
 ```
 
-2. Start the tutorial/exercises by running the following command at the same level where your learn.json file is:
+2. Descarga estos ejercicios en particular usando LearnPack y luego `cd` para entrar en la carpeta:
+
+```bash
+$ learnpack download html-forms-tutorial-exercises
+$ cd html-forms-tutorial-exercises
+```
+
+> Nota: Una vez que termines de descargar, encontrarás una carpeta "exercises" que contiene todos los ejercicios.
+
+3. Inicializa el tutorial/ejercicios ejecutando el siguiente comando en el mismo nivel donde se encuentra tu archivo learn.json:
 
 ```bash
 $ npm i jest@24.8.0 -g
 $ learnpack start
 ```
-
 <!-- endhide -->
 
-## How are the exercises organized?
+## ¿Cómo están organizados los ejercicios?
 
-Each exercise contains the following files:
+Cada ejercicio es una pequeña aplicación de React que contiene los siguientes archivos:
 
-1. **README.md:** contains exercise instructions.
-2. **test.js:** contains the testing script for the exercise (you don't have to open this file).
-3. **app.js:** ignore this file.
+1. **index.js:** representa el archivo de entrada para toda la aplicación.
+2. **README.md:** contiene las instrucciones de los ejercicios.
+3. **test.js:** no tienes que abrir este archivo, contiene el script del test para el ejercicio.
 
-## Contributors
+> Nota: Los ejercicios son autograduados, pero los tests son muy rígidos y estrictos, mi recomendación es que no prestes demasiada atención a los tests y los uses solo como una sugerencia o podrías frustrarte.
 
-Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+## Colaboradores
+ 
+Gracias a estas personas maravillosas ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
-1. [Arnaldo Perez (arnaloperez)](https://github.com/arnaloperez) contribution: (build-tutorial) ✅, (documentation) 📖
+1. [Arnaldo Perez (arnaloperez)](https://github.com/arnaloperez) cotribución: (build-tutorial) ✅, (documentación) 📖
   
-2. [Alejandro Sanchez (alesanchezr)](https://github.com/alesanchezr),  contribution: (bug reports) 🐛
+2. [Alejandro Sanchez (alesanchezr)](https://github.com/alesanchezr),  contribución: (detector bugs) 🐛
 
-3. [Lorena Gubaira (lorenagubaira)](https://github.com/lorenagubaira), contribution: (bug reports) 🐛, contribution: (coder), (translation) 🌎
+3. [Lorena Gubaira (lorenagubaira)](https://github.com/lorenagubaira), contribution: (detector bugs) 🐛, contribution: (editor), (tranducción) 🌎
 
-This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind are welcome!
+Este proyecto sigue la especificación [all-contributors](https://github.com/kentcdodds/all-contributors). ¡Todas las contribuciones son bienvenidas!
 
-This and many other exercises are built by students as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sánchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and  [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
+Este y otros ejercicios son usados para [aprender a programar](https://4geeksacademy.com/es/aprender-a-programar/aprender-a-programar-desde-cero) por parte de los alumnos de 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) realizado por [Alejandro Sánchez](https://twitter.com/alesanchezr) y muchos otros contribuyentes. Conoce más sobre nuestros [Cursos de Programación](https://4geeksacademy.com/es/curso-de-programacion-desde-cero?lang=es) para convertirte en [Full Stack Developer](https://4geeksacademy.com/es/coding-bootcamps/desarrollador-full-stack/?lang=es), o nuestro [Data Science Bootcamp](https://4geeksacademy.com/es/coding-bootcamps/curso-datascience-machine-learning).
