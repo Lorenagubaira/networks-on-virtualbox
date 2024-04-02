@@ -22,7 +22,7 @@ The following steps in this exercise are:
 4. Verification of the installation
 
 <!-- hide -->
-## Before you start... some related tutorials:
+## Before you start...
 
 > We need you! These exercises are built and maintained in collaboration with contributors such as yourself. If you find any bugs or misspellings please contribute and/or report them.
 
@@ -68,7 +68,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
   
 2. [Alejandro Sanchez (alesanchezr)](https://github.com/alesanchezr),  contribution: (bug reports) 🐛
 
-3. [Lorena Gubaira (lorenagubaira)](https://github.com/lorenagubaira), contribution: (bug reports) 🐛, contribution: (coder), (translation) 🌎
+3. [Lorena Gubaira (lorenagubaira)](https://github.com/lorenagubaira), contribution: (bug reports) 🐛, contribution: (editor), (translation) 🌎
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind are welcome!
 
