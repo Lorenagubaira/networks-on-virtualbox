@@ -12,14 +12,15 @@
 *Estas instrucciones [están disponibles en 🇪🇸 español](https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine/blob/main/README.es.md) :es:*
 <!-- endhide -->
 
-En ésta práctica instalaras VirtualBox en tu computadora y lo utilizarás para crear una máquina virtual con Windows 10. VirtualBox será tu laboratorio a lo largo del curso, donde tendrás máquinas virtuales con sistemas operativos distintos donde podrás experimentar cosas en un entorno controlado y sin afectar tu maquina principal.
+Para ésta práctica debes importar una máquina virtual que hemos preparado para ti. Esta mv viene con Debian instalado y trae algunas configuraciones básicas que se utilizan en el proceso de evaluación de éste bootcamp. De resto, es una computadora Debian como cualquiera y será tu un espacio importante donde aprenderás como utilizar sistemas GNU/Linux de forma segura en entornos de red y para su uso como servidor.
 
-Los siguientes pasos en esta práctica son:
+[Descarga aquí](https://drive.google.com/file/d/1MiV1F_W9TWsP0saKF_IMTahSs4bwrFe7/view?usp=drive_link) el archivo que debes importar a VirtualBox para crear la máquina virtual Debian. Se trata de un archivo pesado, asi que es recomendable descargarlo con anterioridad para ahorrar tiempo a la hora de hacer la práctica.
 
-1. Instalación VirtualBox
-2. Descarga de windows
-3. Creación de la maquina virtual
-4. Verificación la instalación
+> **Informacion de acceso la máquina Debian**<br>
+**Usuario**: deb<br>
+**Clave**: 123456<br>
+**ClaveRoot**: 123456
+
 
 <!-- hide -->
 

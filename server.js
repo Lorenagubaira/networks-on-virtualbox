@@ -1,15 +1,15 @@
-const express=require("express")
-const app=express()
-const cors=require("cors")
-const formidable = require('express-formidable');
-const fs = require('fs');
-require("dotenv").config()
+const express = require("express");
+const app = express();
+const cors = require("cors");
+const formidable = require("express-formidable");
+const fs = require("fs");
+require("dotenv").config();
 
-app.use(cors())
+app.use(cors());
 app.use(formidable());
-app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true }));
 
-const backendUrl=`https://${process.env.CODESPACE_NAME}-${process.env.HOST_PORT}.app.github.dev`
+const backendUrl = `https://${process.env.CODESPACE_NAME}-${process.env.HOST_PORT}.app.github.dev`;
 
 /**
  * @typedef {object} machineInfo
@@ -165,34 +165,66 @@ const backendUrl=`https://${process.env.CODESPACE_NAME}-${process.env.HOST_PORT}
  */
 /**
  * This function returns an array of objects with the specified type.
- * @param {String} data 
+ * @param {String} data
  * @returns {Array.<machineInfo>} An array of objects with the 'name' property.
  */
- 
-function parseFileData(data){
-return data.split("---------")
-  .filter(line=>!!line)  
-  .map(vmData=>vmData.trim().split("\n")
-    .reduce((output,line)=>{
-      let [key,value]=line.split(/[=:]/)
-      if (!key || !value) return output
-      key=key.replaceAll("\"","").replace(/^\s/,"")
-      value=value.replace(/\s$/,"").replace(/^\s*/,"")
-      value=value.replaceAll("\\\\","\\").replaceAll("\"","")
-      output[key]=value
-      return output
-    },{})
-  ).filter(data=>!!data.name)
-  
+
+function parseFileData(data) {
+  let nicMode=false
+  let nicId=0
+  return data
+    .split("---------")
+    .filter((line) => !!line)
+    .map((vmData) =>
+      vmData
+        .trim()
+        .split("\n")
+        .reduce((output, line) => {
+          let [key, value] = line.split(/[=:]/);
+          if (!key || !value) return output;
+          key = key.replaceAll('"', "").replace(/^\s/, "");
+          value = value.replace(/\s$/, "").replace(/^\s*/, "");
+          value = value.replaceAll("\\\\", "\\").replaceAll('"', "");
+          // Si la clave es un adaptador de red
+          if(key=="hidpointing"){
+            nicMode=false
+            nicId=0
+          }
+          if(/natnet\d|bridgeadapter\d|intnet\d|hostonlyadapter\d|nat-network\d/.test(key)){
+            nicMode=true
+            nicId++
+            if (!output["nics"])output["nics"]={}
+            output.nics[nicId]={}
+          }
+          // Si se estan parseando nics
+          if(nicMode){
+            if(/nic\d/.test(key)){
+              let id=key.match(/\d/)[0]
+              if(id==nicId)output.nics[nicId].nic=value
+              else {
+                nicId++
+                output.nics[nicId]=value
+              }
+            }else{
+              output.nics[nicId][key.replace(/\d/,"")]=value
+            }
+            return output
+          }
+          if(!nicMode){
+            output[key] = value;
+            return output;
+          }
+        }, {})
+    )
+    .filter((data) => !!data.name);
 }
 
+app.use("/public", express.static("./public"));
 
-app.use("/public",express.static("./public"))
-
-app.get("/",(req,res)=>{
+app.get("/", (req, res) => {
   console.log("Testing VMInfo");
-  if (fs.existsSync('vminfo.json')) {
-    const jsonData = fs.readFileSync('vminfo.json', 'utf8');
+  if (fs.existsSync("vminfo.json")) {
+    const jsonData = fs.readFileSync("vminfo.json", "utf8");
     res.send(`
       <h1>${backendUrl}</h1>
       <code>${jsonData}</code>
@@ -205,44 +237,44 @@ app.get("/",(req,res)=>{
       <h3>Listo para enviar la información de validación</h3>
     `);
   }
-})
+});
 
-app.post("/", async (req,res)=>{
-  try {    
-    console.log("Receiving files")
-    console.log(req.files.file.path)
-    fs.readFile(req.files.file.path, 'utf-8', (err, data) => {
-      if(err){
-        console.error(err)
-        res.status(400).send({message:"Error on file"})    
-      }else{
-        let machinesInfo=parseFileData(data)
-        fs.writeFileSync('vminfo.json', JSON.stringify(machinesInfo), 'utf8');
-        console.log("Data ready: ", machinesInfo)
-        res.status(200).send({message:"JSON saved successfully"})
+app.post("/", async (req, res) => {
+  try {
+    console.log("Receiving files");
+    console.log(req.files.file.path);
+    fs.readFile(req.files.file.path, "utf-8", (err, data) => {
+      if (err) {
+        console.error(err);
+        res.status(400).send({ message: "Error on file" });
+      } else {
+        let machinesInfo = parseFileData(data);
+        fs.writeFileSync("vminfo.json", JSON.stringify(machinesInfo), "utf8");
+        //console.log("Data ready: ", machinesInfo);
+        res.status(200).send({ message: "JSON saved successfully" });
       }
     });
   } catch (error) {
     console.log("Didn't receive the file");
-    res.status(400).send({message:"Didn't receive the file"})    
+    res.status(400).send({ message: "Didn't receive the file" });
   }
-})
+});
 
 //app.listen(3001,()=>{console.log("Listening")})
-app.listen(process.env.HOST_PORT,()=>{
-  let text=`
+app.listen(process.env.HOST_PORT, () => {
+  let text = `
   /* Your url is:
   * -----------------------------------
   * ${backendUrl}
   * ----------------------------------- 
   */
  console.log(${backendUrl})
-  `
-  console.clear()
+  `;
+  //console.clear();
   try {
-    fs.writeFileSync('./excercises/05-Verify-instalation/app.js', text, 'utf8');    
+    fs.writeFileSync("./excercises/05-Verify-instalation/app.js", text, "utf8");
   } catch (error) {
     //console.log(text)
   }
-  console.log("Your URL for the verification script is: "+ backendUrl)
-})
+  console.log("Your URL for the verification script is: " + backendUrl);
+});

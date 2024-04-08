@@ -1,14 +1,12 @@
-# Bienvenid@ a Learnpack
+# Configurando Interfaces de red en VirtualBox
 
-Esta herramienta te acompañara a lo largo del bootcamp, la utilizarás para poner a prueba tus conocimientos en prácticas interactivas paso a paso y con feedback en vivo.
-
-En ésta práctica instalaras VirtualBox en tu computadora y lo utilizarás para crear una máquina virtual con Windows 10. VirtualBox será tu laboratorio a lo largo del curso, donde tendrás máquinas virtuales con sistemas operativos distintos donde podrás experimentar cosas en un entorno controlado y sin afectar tu maquina principal.
+Para ésta práctica trabajaremos con las 2 maquinas virtuales, una con Debian, y otra con Windows. Realizarás una red privada entre maquinas virtuales con traducción hacia la red del anfitrión, en lo que se conoce como una "Red NAT". Previamente debes tener listas ambas maquinas virtuales, de no ser el caso lo recomendable es instalar Windows con la herramienta desatendida de VirtualBox, y para la máquina Debian puedes descargarla ya lista desde [este enlace](https://drive.google.com/file/d/1MiV1F_W9TWsP0saKF_IMTahSs4bwrFe7/view?usp=drive_link).
 
 Los siguientes pasos en esta práctica son:
 
-1. Instalación VirtualBox
-2. Descarga de windows
-3. Creación de la maquina virtual
+1. Creación de una red NAT
+2. Configuración de interfaces en las máquinas virtuales
+3. Pruebas de conexión
 4. Verificación la instalación
 
 Avanza al siguiente paso con la flecha ➡️

@@ -1,12 +1,8 @@
 # `04` Valida tu instalación
 
-## 1. CURL
+Este paso es consiste en ejecutar un script de verificación para validar la configuración de la red NAT que creaste, para ello sigue los siguientes pasos:
 
-Es una herramienta que permite hacer peticiones a una página web desde la terminal de tu sistema, también puede realizar otras funciones, pero ésta es la que nos ocupa en este caso.
-
-Para windows debes descargar la herramienta de [este enlace](https://curl.se/windows/) y luego instalarla antes de continuar al siguiente paso.
-
-## 2. Habilitar el puerto público
+## 1. Habilitar el puerto público
 
 Para que learnpack pueda recibir la información que se enviará desde tu maquina, es necesario habilitar el acceso público del puerto, que por seguridad viene privado por defecto.
 
@@ -14,7 +10,7 @@ Para ello selecciona la pestaña "Puertos" en el panel inferior de codespace, ah
 
 ![Puerto público](../../.learn/assets/public-ports.png)
 
-## 3. Script de validación
+## 2. Script de validación
 
 Es un script que hemos desarrollado a la medida de esta práctica. Se encarga de tomar la información de VirtualBox y enviarla para hacer la validación. Primero debes descargar el script y ejecutarlo el te solicitará una URL que puedes encontrar en el archivo `url.txt` que se encuentra en esta práctica.
 
@@ -31,6 +27,6 @@ Una vez ejecutado el script con éxito, podrás ejecutar la prueba para validar 
 
 ## 5. ¡Listo!
 
-Si lograste pasar las pruebas, ya has instalado una maquina virtual con windows. Este será tu lugar seguro para hacer experimentos y pruebas durante el curso.
+Si lograste pasar las pruebas, ya has creado una red NAT en VirtualBox y has conectado una maquina virtual Debian y otra Windows entre sí con esta red. De esta forma podrás experimentar con escenarios que pongan a prueba tus habilidades de ciberseguridad.
 
 Si tienes algún problema no dudes en recurrir a un mentor o a los demás canales de apoyo que te ofrece 4Geeks.
