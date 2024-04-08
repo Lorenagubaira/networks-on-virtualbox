@@ -1,16 +1,16 @@
 {
   "language": "node",
   "title": {
-    "us": "Installing Windows on a Virtual Machine",
-    "es": "Instalar Windows en una máquina virtual"
+    "us": "Networks on VirtualBox",
+    "es": "Redes en VirtualBox"
   },
   "preview": "https://github.com/4GeeksAcademy/javascript-functions-exercises-tutorial/blob/master/.learn/assets/preview.png?raw=true",
   "slug": "installing-windows-on-a-virtual-machine",
   "description": {
-    "us": "Installing Windows on VirtualBox virtual machine",
-    "es": "Instalar Windows en una máquina virtual de VirtualBox"
+    "us": "Create a network between 2 virtual machines and with access to the external network. Perform tests to validate the connection.",
+    "es": "Crea una red entre 2 máquinas virtuales y con acceso a la red externa. Realiza pruebas para validar la conexión."
   },
-  "repository": "https://github.com/4GeeksAcademy/javascript-functions-exercises-tutorial",
+  "repository": "https://github.com/4GeeksAcademy/networks-on-virtualbox",
   "duration": 5,
   "difficulty": "easy",
   "videoSolutions": true,
