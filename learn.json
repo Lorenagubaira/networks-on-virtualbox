@@ -1,0 +1,27 @@
+{
+  "language": "node",
+  "title": {
+    "us": "Networks on VirtualBox",
+    "es": "Redes en VirtualBox"
+  },
+  "preview": "https://github.com/4GeeksAcademy/javascript-functions-exercises-tutorial/blob/master/.learn/assets/preview.png?raw=true",
+  "slug": "installing-windows-on-a-virtual-machine",
+  "description": {
+    "us": "Create a network between 2 virtual machines and with access to the external network. Perform tests to validate the connection.",
+    "es": "Crea una red entre 2 máquinas virtuales y con acceso a la red externa. Realiza pruebas para validar la conexión."
+  },
+  "repository": "https://github.com/4GeeksAcademy/networks-on-virtualbox",
+  "duration": 5,
+  "difficulty": "easy",
+  "videoSolutions": true,
+  "projectType": "tutorial",
+  "bugsLink": "https://github.com/learnpack/learnpack/issues/new",
+  "skills": ["cybersecurity"],
+  "graded": true,
+  "editor": {
+    "version": "3.1.9"
+  },
+  "telemetry": {
+    "batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry"
+  }
+}
