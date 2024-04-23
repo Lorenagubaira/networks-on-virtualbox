@@ -1,14 +1,23 @@
+<<<<<<< HEAD
 # Networking on VirtualBox
+=======
+# VirtualBox Interactive Tutorial
+>>>>>>> ba6f03e14ea3314737534cc583600566b6a32b1d
 
 <!-- hide -->
 <a href="https://www.4geeksacademy.co"><img height="280" align="right" src="https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine/blob/master/js-bg-badge.png"></a>
 
+<<<<<<< HEAD
 > By [@arnaldoperez](https://github.com/arnaldoperez) and [other contributors](https://github.com/4GeeksAcademy/networks-on-virtualbox/contributors) at [4Geeks Academy](https://4geeksacademy.co/)
+=======
+> By [@arnaldoperez](https://github.com/arnaldoperez) and [other contributors](https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine/graphs/contributors) at [4Geeks Academy](https://4geeksacademy.co/)
+>>>>>>> ba6f03e14ea3314737534cc583600566b6a32b1d
 
 ![last commit](https://img.shields.io/github/last-commit/4geeksacademy/installing-windows-on-virtual-machine)
 [![build by developers](https://img.shields.io/badge/build_by-Developers-blue)](https://4geeks.com)
 [![build by developers](https://img.shields.io/twitter/follow/4geeksacademy?style=social&logo=twitter)](https://twitter.com/4geeksacademy)
 
+<<<<<<< HEAD
 *Estas instrucciones [están disponibles en 🇪🇸 español](https://github.com/4GeeksAcademy/networks-on-virtualbox/blob/master/README.es.md)*
 <!-- endhide -->
 
@@ -21,6 +30,19 @@ For this practice you must import a virtual machine that we have prepared for yo
 **Clave**: 123456<br>
 **ClaveRoot**: 123456
 
+=======
+*Estas instrucciones [están disponibles en 🇪🇸 español](https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine/blob/main/README.es.md) :es:*
+<!-- endhide -->
+
+In this exercise, you will install VirtualBox on your computer and use it to create a virtual machine with Windows 10. VirtualBox will be your lab throughout the course, where you will have virtual machines with different operating systems where you can experiment in a controlled environment without affecting your main machine.
+
+The following steps in this exercise are:
+
+1. VirtualBox installation
+2. Windows download
+3. Creation of the virtual machine
+4. Verification of the installation
+>>>>>>> ba6f03e14ea3314737534cc583600566b6a32b1d
 
 <!-- hide -->
 ## Before you start...
