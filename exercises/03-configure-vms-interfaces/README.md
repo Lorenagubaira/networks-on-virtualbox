@@ -1,35 +1,12 @@
-# `02` Download a Windows 10 ISO
+# `03` Interface configuration
 
-## Installing Windows 10
+Next you must add the interfaces to the virtual machines and assign them the NAT network you just created in the previous step.
 
-### 1. Download the meda creation tool
+In the configuration window of each machine, you will see on the left the ``Network`` option. There you will find the interfaces (also called `Adapters`) that you can have on your machine and the configuration tab that corresponds to each one.
 
-Visit the official website for [Download Windows 10]((https://www.microsoft.com/es-es/software-download/windows10)) to get the media creation tool. When you run the installer, a wizard will appear to guide you through the process.
+In the `Connected to:` option you must choose `NAT Network` and then specify which network this machine will be part of.
 
-![Download windows iso](../../.learn/assets/downloadWin1.png)
+The configuration should be as follows:
+![Configuración de red NAT](../../.learn/assets/vbox-vm-nat-network.png)
 
-### 2. Accept the terms
-
-![Download windows iso](../../.learn/assets/downloadWin2.png)
-
-### 3. Choose "Create instalation media"
-
-![Download windows iso](../../.learn/assets/downloadWin3.png)
-
-### 3. Customize your instalation
-
-By default it will take the same configuration of the PC where you are running the wizard, but if you want to change the options uncheck the box "Use the recommended restore point for this machine".
-
-![Download windows iso](../../.learn/assets/downloadWin4.png)
-
-### 4. Create an ISO file
-
-This is what you'll need to create a virtual machine
-
-![Download windows iso](../../.learn/assets/downloadWin5.png)
-
-### 5. Choose where to save your ISO
-
-![Download windows iso](../../.learn/assets/downloadWin6.png)
-
-Since it is such a large file, you will have to wait a while for the download to finish. Once finished you will have the ISO to create your virtual machine.
+> Remember to do the same for both machines

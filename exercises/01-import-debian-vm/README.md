@@ -1,4 +1,4 @@
-# Importando una maquina virtual
+# `01` Importing a Virtual Machine
 
 ## 01 Download the OVA file
 
@@ -18,11 +18,11 @@ If for some reason VirtualBox does not run when you open the OVA file, you can i
 
 ![Confirmación de configuración de maquina virtual importada](../../.learn/assets/vbox-import-confirm.png)
 
-## 03 Ejecuta tu nueva máquina virtual
+## 03 Run your new machine
 
-Una vez termine el proceso de importación, estas listo para arrancar tu nueva máquina Debian. La máquina ya viene configurada con claves de acceso, pero como buen estudiante de ciberseguridad, sabes que deberías cambiarlas por alguna más segura.
+Once the import process is finished, you are ready to boot your new Debian machine. The machine comes already configured with passwords, but as a good student of cybersecurity, you know that you should change them to a more secure one.
 
-> **Informacion de acceso la máquina Debian**<br>
-**Usuario**: deb<br>
-**Clave**: 123456<br>
-**ClaveRoot**: 123456
+> **Login info **<br>
+**user**: deb<br>
+**Password**: 123456<br>
+**RootPassword**: 123456

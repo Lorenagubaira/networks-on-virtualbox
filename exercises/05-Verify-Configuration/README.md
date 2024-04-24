@@ -1,4 +1,4 @@
-# `04` Validate your installation
+# `05` Validate your installation
 
 ## 1. CURL
 

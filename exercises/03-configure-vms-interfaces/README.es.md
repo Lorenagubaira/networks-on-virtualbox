@@ -1,4 +1,4 @@
-# `02` Configuración de interfaces 
+# `03` Configuración de interfaces 
 
 A continuación debes agregar las interfaces a las máquinas virtuales y asignarles la red NAT que acabas de crear en el paso anterior.
 

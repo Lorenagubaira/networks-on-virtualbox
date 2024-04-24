@@ -1,4 +1,4 @@
-# `01` Creacion de una Red NAT
+# `02` Creacion de una Red NAT
 
 El primer paso para interconectar nuestras máquinas virtuales es crear una Red NAT en el administrador de red de VirtualBox.
 

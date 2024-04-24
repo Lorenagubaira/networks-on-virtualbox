@@ -1,4 +1,4 @@
-# `04` Valida tu instalación
+# `05` Valida tu instalación
 
 Este paso es consiste en ejecutar un script de verificación para validar la configuración de la red NAT que creaste, para ello sigue los siguientes pasos:
 
