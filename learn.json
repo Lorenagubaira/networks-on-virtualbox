@@ -1,8 +1,8 @@
 {
   "language": "node",
   "title": {
-    "us": "Networks on VirtualBox",
-    "es": "Redes en VirtualBox"
+    "us": "Creating a NAT network on VirtualBox",
+    "es": "Creando una red NAT en VirtualBox"
   },
   "preview": "https://github.com/4GeeksAcademy/javascript-functions-exercises-tutorial/blob/master/.learn/assets/preview.png?raw=true",
   "slug": "installing-windows-on-a-virtual-machine",
