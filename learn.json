@@ -16,7 +16,7 @@
   "videoSolutions": true,
   "projectType": "tutorial",
   "bugsLink": "https://github.com/learnpack/learnpack/issues/new",
-  "skills": ["cybersecurity","ciberseguridad"],
+  "skills": ["cybersecurity"],
   "graded": true,
   "editor": {
     "version": "3.1.9"

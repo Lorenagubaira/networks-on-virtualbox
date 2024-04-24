@@ -1,3 +1,11 @@
+---
+title: "Creating a NAT network on VirtualBox"
+subtitle: "Setup a private network between virtual machines with translation to the host network, in what is known as a 'NAT network'."
+tags: ["cybersecurity"]
+authors: ["arnaldoperez"]
+
+---
+
 # Networking on VirtualBox
 
 <!-- hide -->

@@ -1,3 +1,10 @@
+---
+title: "Creando una red NAT en VirtualBox"
+subtitle: "Realizarás una red privada entre maquinas virtuales con traducción hacia la red del anfitrión, en lo que se conoce como una 'Red NAT'."
+tags: ["cybersecurity"]
+authors: ["arnaldoperez"]
+---
+
 # Networking on VirtualBox
 
 <!-- hide -->
