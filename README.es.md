@@ -71,7 +71,7 @@ $ cd html-forms-tutorial-exercises
 $ npm i jest@24.8.0 -g
 $ learnpack start
 ```
-
+<!--hide-->
 ## Colaboradores
  
 Gracias a estas personas maravillosas ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):

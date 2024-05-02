@@ -63,7 +63,7 @@ $ learnpack plugins:install learnpack-node
 $ npm i jest@24.8.0 -g
 $ learnpack start
 ```
-
+<!--hide-->
 
 ## Contributors
 
