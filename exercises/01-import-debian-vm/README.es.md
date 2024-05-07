@@ -2,7 +2,7 @@
 
 ## 01 Descarga el archivo OVA
 
- > [Descarga aquí](https://drive.google.com/file/d/1MiV1F_W9TWsP0saKF_IMTahSs4bwrFe7/view?usp=drive_link).
+ > [Descarga aquí](https://storage.googleapis.com/breathecode/virtualbox/deb.ova).
 
 ## 02 Abre el archivo OVA
 
