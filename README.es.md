@@ -8,8 +8,6 @@ authors: ["arnaldoperez"]
 # Networking on VirtualBox
 
 <!-- hide -->
-<a href="https://www.4geeksacademy.co"><img height="280" align="right" src="https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine/blob/master/js-bg-badge.png"></a>
-
 > By [@arnaldoperez](https://github.com/arnaldoperez) and [other contributors](https://github.com/4GeeksAcademy/networks-on-virtualbox/contributors) at [4Geeks Academy](https://4geeksacademy.co/)
 
 ![last commit](https://img.shields.io/github/last-commit/4geeksacademy/installing-windows-on-virtual-machine)
@@ -23,7 +21,7 @@ Para ésta práctica debes importar una máquina virtual que hemos preparado par
 
 📝 Instructions
 
-[Descarga aquí](https://drive.google.com/file/d/1MiV1F_W9TWsP0saKF_IMTahSs4bwrFe7/view?usp=drive_link) el archivo que debes importar a VirtualBox para crear la máquina virtual Debian. Se trata de un archivo pesado, asi que es recomendable descargarlo con anterioridad para ahorrar tiempo a la hora de hacer la práctica.
+[Descarga aquí](https://storage.googleapis.com/breathecode/virtualbox/deb.ova) el archivo que debes importar a VirtualBox para crear la máquina virtual Debian. Se trata de un archivo pesado, asi que es recomendable descargarlo con anterioridad para ahorrar tiempo a la hora de hacer la práctica.
 
 > **Informacion de acceso la máquina Debian**<br>
 **Usuario**: deb<br>
