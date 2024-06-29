@@ -22,7 +22,7 @@ authors: ["arnaldoperez"]
 
 For this practice you must import a virtual machine that we have prepared for you. It comes with Debian installed and it has some basic settings that will be used along the bootcamp. Otherwise is a regular Debian machine like any other, and it will be an important space where you'll learn how to use GNU/Linux systems in a secure way for it use in network environments as a server.
 
-[Download here](https://drive.google.com/file/d/1MiV1F_W9TWsP0saKF_IMTahSs4bwrFe7/view?usp=drive_link) the file that you must import to VirtualBox to create de Debian virtual machine. It is a heavy file, so it is advisable to download it in advance to save time when doing the practice.
+[Download here](https://storage.googleapis.com/breathecode/virtualbox/deb.ova) the file that you must import to VirtualBox to create de Debian virtual machine. It is a heavy file, so it is advisable to download it in advance to save time when doing the practice.
 
 > **Informacion de acceso la máquina Debian**<br>
 **Usuario**: deb<br>
