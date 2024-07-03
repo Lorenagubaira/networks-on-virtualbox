@@ -1,14 +1,6 @@
----
-title: "Creating a NAT network on VirtualBox"
-subtitle: "Setup a private network between virtual machines with translation to the host network, in what is known as a 'NAT network'."
-tags: ["cybersecurity"]
-authors: ["arnaldoperez"]
-
----
-
+<!-- hide -->
 # Networking on VirtualBox
 
-<!-- hide -->
 <a href="https://www.4geeksacademy.co"><img height="280" align="right" src="https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine/blob/master/js-bg-badge.png"></a>
 
 > By [@arnaldoperez](https://github.com/arnaldoperez) and [other contributors](https://github.com/4GeeksAcademy/networks-on-virtualbox/contributors) at [4Geeks Academy](https://4geeksacademy.co/)
@@ -20,15 +12,14 @@ authors: ["arnaldoperez"]
 *Estas instrucciones [están disponibles en 🇪🇸 español](https://github.com/4GeeksAcademy/networks-on-virtualbox/blob/master/README.es.md)*
 <!-- endhide -->
 
-For this practice you must import a virtual machine that we have prepared for you. It comes with Debian installed and it has some basic settings that will be used along the bootcamp. Otherwise is a regular Debian machine like any other, and it will be an important space where you'll learn how to use GNU/Linux systems in a secure way for it use in network environments as a server.
+For this project, you must import a virtual machine we have prepared. It comes with Debian installed and some basic settings that will be used during the bootcamp. Otherwise, it is a regular Debian machine like any other, and it will be an important space where you'll learn how to use GNU/Linux systems in a secure way for its use in network environments as a server.
 
-[Download here](https://storage.googleapis.com/breathecode/virtualbox/deb.ova) the file that you must import to VirtualBox to create de Debian virtual machine. It is a heavy file, so it is advisable to download it in advance to save time when doing the practice.
+[Download here the OVA file](https://storage.googleapis.com/breathecode/virtualbox/deb.ova) the file that you must import to VirtualBox to create de Debian virtual machine. It is a heavy file, so it is advisable to download it in advance to save time when doing the practice.
 
-> **Informacion de acceso la máquina Debian**<br>
-**Usuario**: deb<br>
-**Clave**: 123456<br>
-**ClaveRoot**: 123456
-
+> **To login into the debian computer**
+> **User**: deb
+> **Passworde**: 123456
+> **Root password**: 123456
 
 <!-- hide -->
 
@@ -54,13 +45,11 @@ Clone this repository in your local environment ([Clone this repository](https:/
 
 ```bash
 $ npm i @learnpack/learnpack -g
-$ learnpack plugins:install learnpack-node
 ```
 
 2. Start the tutorial/exercises by running the following command at the same level where your learn.json file is:
 
 ```bash
-$ npm i jest@24.8.0 -g
 $ learnpack start
 ```
 <!--hide-->
