@@ -32,17 +32,9 @@ To login into the debian computer:
 
 ## 🌱 How to start this project.
 
-### One click installation (recommended):
-
-You can open these exercises in just a few seconds by clicking: [Open in Codespaces](https://codespaces.new/?repo=4GeeksAcademy/installing-windows-on-virtual-machine) (recommended) or [Open in Gitpod](https://gitpod.io#https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine.git).
-
-> Once you have VSCode open the LearnPack exercises should start automatically. If exercises don't run automatically, you can try typing on your terminal: `$ learnpack start`
-
-### Local Installation
-
 Clone this repository in your local environment ([Clone this repository](https://4geeks.com/how-to/github-clone-repository)) and follow the steps below:
 
-1. Install LearnPack, the package manager for learning tutorials and the node compiler plugin for learnpack, make sure you also have node.js 14:
+1. Install LearnPack, the package manager for learning tutorials and the node compiler plugin for learnpack, make sure you also have node.js 18+:
 
 ```bash
 $ npm i @learnpack/learnpack -g
