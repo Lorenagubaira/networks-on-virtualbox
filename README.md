@@ -16,10 +16,11 @@ For this project, you must import a virtual machine we have prepared. It comes w
 
 [Download here the OVA file](https://storage.googleapis.com/breathecode/virtualbox/deb.ova) the file that you must import to VirtualBox to create de Debian virtual machine. It is a heavy file, so it is advisable to download it in advance to save time when doing the practice.
 
-> **To login into the debian computer**  
-> **User**: deb  
-> **Passworde**: 123456  
-> **Root password**: 123456  
+To login into the debian computer:
+
+> **User**: `deb`  
+> **Passworde**: `123456`  
+> **Root password**: `123456`  
 
 <!-- hide -->
 
