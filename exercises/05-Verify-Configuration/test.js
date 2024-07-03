@@ -1,19 +1,32 @@
+
+
+
 describe("Checking NAT network interfaces", () => {
-  var data
+  var wdata
+  var ldata
   var winInterface
   var debianInterface
   
   beforeAll(() => {
     let fs = require("fs")
-    require('dotenv').config();
-    if (fs.existsSync('vminfo.json')) {
-      data = JSON.parse(fs.readFileSync('vminfo.json', 'utf8'));
+
+    const _linux = 'linux_report.txt';
+    if (fs.existsSync(_linux)) {
+      ldata = JSON.parse(fs.readFileSync(_linux, 'utf8'));
     } else {
-      throw new Error('vminfo.json not found. Please run the BAT file on your local machine.');
+      throw new Error(`${_linux} not found.`);
     }
-    let winMachine = data.find(vm => /^Windows 10*/.test(vm.ostype))
+
+    const _windows = 'windows_report.txt';
+    if (fs.existsSync(_linux)) {
+      wdata = JSON.parse(fs.readFileSync(_linux, 'utf8'));
+    } else {
+      throw new Error(`${_windows} not found. Please run the BAT file on the windows machine and past it on the rood of this LearnPack exercises next to the learn.json file`);
+    }
+
+    let winMachine = wdata.find(vm => /^Windows 10*/.test(vm.ostype))
     winInterface=Object.values(winMachine.nics).find(nic=>nic.nic=="natnetwork")
-    let debianMachine = data.find(vm => /^Debian*/.test(vm.ostype))
+    let debianMachine = ldata.find(vm => /^Debian*/.test(vm.ostype))
     debianInterface=Object.values(debianMachine.nics).find(nic=>nic.nic=="natnetwork")
   });
 

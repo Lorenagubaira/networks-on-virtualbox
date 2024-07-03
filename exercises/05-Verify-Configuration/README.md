@@ -1,36 +1,15 @@
 # `05` Validate your installation
 
-## 1. CURL
+We have developed two scripts to help you measure your success during this project. 
 
-It is a tool that allows you to make requests to a web page from the terminal of your system, it can also perform other functions, but this is the one that concerns us in this case.
+There are two scripts inside the `./assets` folder there are in charge of taking the information from VirtualBox back to LearnPack for the validation. 
 
-For windows you must download the tool from [this link]((https://curl.se/windows/)) and then install it before proceeding to the next step.
-
-You can skip this step if you already have curl installed
-
-## 2. Enable public port
-
-In order for learnpack to receive the information that will be send from your machine, is necessary to enable public access to the port, witch for safety reasons comes private by default.
-
-For this select the "Ports" tab in the lower panel of codespace, there you'll see the ports that are beign used. You'll need to publish the port `3001` and for that right click on the port, go to the menu `Port visibility` and select the `Public` option.
-
-![Public port](../../.learn/assets/public-ports.png)
-
-## 3. Validation Script
-
-It is a script that we have developed to the measure of this practice. It is in charge of taking the information from VirtualBox and send it to do the validation. First you must download the script and run it, it will ask you for a URL that you can find in the `url.txt` file found in this practice.
-
-[Download the script for validation on Windows here.](https://github.com/4GeeksAcademy/networks-on-virtualbox/blob/master/.learn/assets/sendDataWin.zip)
-
-[Download the script for validation on Linux here.](https://github.com/4GeeksAcademy/networks-on-virtualbox/blob/master/.learn/assets/sendDataBash.zip)
-
-Remember extracting the file before executing it on the host machine.
-
-![Script Windows](../../.learn/assets/script-win.png)
+- report_linux.sh will be runned automatically by learnpack.
+- report_windows.bat you have to copy and past into your windows computer, then you have to copy the "windows_report.txt" file it genrates and past it into the root of these exercises for validation.
 
 ## 3. Running the test
 
-Once the script is successfully executed, you will be able to run the test to validate your Windows installation in VirtualBox.
+Once you have pasted the windows_report.txt into the root of the LearnPack exercises, you will be able to run the test to validate your Linux and Windows installation in VirtualBox.
 
 ![Script Windows](../../.learn/assets/script-test.png)
 

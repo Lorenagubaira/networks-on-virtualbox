@@ -1,0 +1,13 @@
+{
+  "success": false,
+  "numFailedTestSuites": 1,
+  "numFailedTests": 0,
+  "numPassedTests": 0,
+  "testResults": [
+    {
+      "message": "  \u001b[1m● \u001b[22mTest suite failed to run\n\n    Error executing bash script:Error: Command failed: bash .learn/assets/report_linux.sh\n",
+      "errorType": "Error executing bash script:Error: Command failed: bash .learn/assets/report_linux.sh"
+    }
+  ],
+  "failed": []
+}

@@ -27,10 +27,7 @@
 		}
 	},
 
-	"onCreateCommand": "npm i jest@24.8.0 -g && npm i @learnpack/learnpack@2.1.35 -g && learnpack plugins:install @learnpack/node@1.1.1 && npm i",
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postStartCommand": "bash -c .devcontainer/postCreate.sh"
+	"onCreateCommand": "npm i -g jest@29.7.0 @learnpack/learnpack@2.1.56 && learnpack plugins:install @learnpack/node && npm i",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
