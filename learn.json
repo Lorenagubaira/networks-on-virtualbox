@@ -13,7 +13,7 @@
 	"difficulty": "beginner",
 	"projectType": "tutorial",
 	"bugsLink": "https://github.com/learnpack/learnpack/issues/new",
-	"technologies": ["networks", "cybersecurity", "ciberseguridad"],
+	"technologies": ["networks", "redes", "cybersecurity", "ciberseguridad"],
 	"localhostOnly": true,
 	"telemetry": {
 		"batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry"
