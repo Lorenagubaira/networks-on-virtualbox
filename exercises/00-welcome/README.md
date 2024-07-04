@@ -1,18 +1,18 @@
-# Setting up interfaces on VirtualBox
+# Configuración de interfaces en VirtualBox
 
-For this practice, we will work with two virtual machines that you need to install if you have not already during previous exercises:
+Para esta práctica, trabajaremos con dos máquinas virtuales que necesitas instalar si no lo has hecho durante ejercicios anteriores:
 
-- One virtual machine with Debian ([you can download the image file here](https://storage.googleapis.com/breathecode/virtualbox/deb.ova)).
-- Another [virtual machine with Windows](https://4geeks.com/interactive-exercise/installing-windows-on-virtual-machine).
+- Una máquina virtual con Debian ([puedes descargar el archivo de imagen aquí](https://storage.googleapis.com/breathecode/virtualbox/deb.ova)).
+- Otra [máquina virtual con Windows](https://4geeks.com/interactive-exercise/installing-windows-on-virtual-machine).
 
-You will set up a private network between virtual machines with translation to the host network, known as a “NAT network.”
+Configurarás una red privada entre las máquinas virtuales con traducción a la red del host, conocida como una “red NAT”.
 
-The following steps in this practice are:
+Los pasos a seguir en esta práctica son:
 
-1. Import the Debian virtual machine
-2. Creating a NAT network
-3. Configuring interfaces in the virtual machines
-4. Connection tests
-5. Verification of the installation
+1. Importar la máquina virtual Debian
+2. Crear una red NAT
+3. Configurar interfaces en las máquinas virtuales
+4. Pruebas de conexión
+5. Verificación de la instalación
 
-Advance to the next step with the arrow `->`
+Avanza al siguiente paso con la flecha `->`
