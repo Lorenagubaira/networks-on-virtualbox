@@ -4,8 +4,8 @@ Hemos desarrollado dos scripts para ayudarte a medir tu éxito durante este proy
 
 Hay dos scripts dentro de la carpeta `./assets` que se encargan de tomar la información de VirtualBox y enviarla a LearnPack para la validación.
 
-- report_linux.sh se ejecutará automáticamente por learnpack.
-- report_windows.bat debes copiarlo y pegarlo en tu computadora con Windows, luego tienes que copiar el archivo "windows_report.txt" que genera y pegarlo en la raíz de estos ejercicios para la validación.
+- `report_linux.sh` se ejecutará automáticamente por learnpack.
+- `report_windows.bat` debes copiarlo y pegarlo en tu computadora con Windows, luego tienes que copiar el archivo "windows_report.txt" que genera y pegarlo en la raíz de estos ejercicios para la validación.
 
 ## 3. Ejecutando la prueba
 
