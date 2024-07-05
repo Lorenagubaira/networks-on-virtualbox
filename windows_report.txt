@@ -1,12 +1,4 @@
-Virtual Machine Information
-=========================
-
-Ejecutando VBoxManage list vms...
-"deb" {aab93fba-354e-47c1-ba71-7ceca5a51edc}
-"windows" {a113f0a8-8ece-4c1f-99da-62820b77df5f}
-
-VM Name: deb
----------
+--------- 
 name="deb"
 encryption="disabled"
 groups="/"
@@ -154,9 +146,7 @@ GuestAdditionsFacility_VirtualBox Base Driver=50,1720102881061
 GuestAdditionsFacility_VirtualBox System Service=50,1720102886848
 GuestAdditionsFacility_Seamless Mode=50,1720102938931
 GuestAdditionsFacility_Graphics Mode=50,1720102886829
-
-VM Name: windows
----------
+--------- 
 name="windows"
 encryption="disabled"
 groups="/"
@@ -287,4 +277,4 @@ rec_screen_video_fps=25
 GuestMemoryBalloon=0
 GuestOSType="Windows10_64"
 GuestAdditionsRunLevel=0
-
+--------- 
