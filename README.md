@@ -1,8 +1,6 @@
 <!-- hide -->
 # Networking on VirtualBox
 
-<a href="https://www.4geeksacademy.co"><img height="280" align="right" src="https://github.com/4GeeksAcademy/installing-windows-on-virtual-machine/blob/master/js-bg-badge.png"></a>
-
 > By [@arnaldoperez](https://github.com/arnaldoperez) and [other contributors](https://github.com/4GeeksAcademy/networks-on-virtualbox/contributors) at [4Geeks Academy](https://4geeksacademy.co/)
 
 ![last commit](https://img.shields.io/github/last-commit/4geeksacademy/installing-windows-on-virtual-machine)
@@ -12,15 +10,7 @@
 *Estas instrucciones [están disponibles en 🇪🇸 español](https://github.com/4GeeksAcademy/networks-on-virtualbox/blob/master/README.es.md)*
 <!-- endhide -->
 
-For this project, you must import a virtual machine we have prepared. It comes with Debian installed and some basic settings that will be used during the bootcamp. Otherwise, it is a regular Debian machine like any other, and it will be an important space where you'll learn how to use GNU/Linux systems in a secure way for its use in network environments as a server.
-
-[Download here the OVA file](https://storage.googleapis.com/breathecode/virtualbox/deb.ova) the file that you must import to VirtualBox to create de Debian virtual machine. It is a heavy file, so it is advisable to download it in advance to save time when doing the practice.
-
-To login into the debian computer:
-
-> **User**: `deb`  
-> **Passworde**: `123456`  
-> **Root password**: `123456`  
+For this project, you must import a virtual machine we have prepared. It comes with Debian installed and some basic settings that will be used during the bootcamp. Click here to access the machine files and [Debian installation instructions](https://4geeks.com/docs/start/cybersecurity-virtual-machines#debian-virtual-machine).
 
 <!-- hide -->
 
