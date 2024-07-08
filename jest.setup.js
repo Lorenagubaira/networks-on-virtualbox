@@ -1,14 +1,14 @@
 const { execSync } = require('child_process');
+const path = require('path');
 
-// Path to your bash script
-const scriptPath = '.learn/assets/report_linux.sh';
+// // Path to your report file
+const reportFilePath = path.join(__dirname, 'windows_report.txt');
 
-// Execute the bash script
+// Execute the windows_report.txt
 try {
-  execSync(`bash ${scriptPath}`, { stdio: 'inherit' });
+  execSync(`echo "Contents of windows_report.txt:"`);
+  execSync(`type "${reportFilePath}"`, { stdio: 'inherit' }); 
   console.log('Bash script executed successfully.');
 } catch (error) {
-  throw `Error executing bash script.
-  
-  ${error.toString()}`;
+  throw new Error(`Error executing the bash script.\n\n${error.toString()}`);
 }

@@ -14,3 +14,5 @@ for /f "tokens=*" %%a in ('"%program_path%" list vms') do (
   )
   echo --------- >> windows_report.txt
 )
+
+

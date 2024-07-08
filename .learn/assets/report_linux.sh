@@ -19,3 +19,4 @@ while read -r line; do
   # echo "Información de la máquina virtual $vm_name:"
 
 done < <(VBoxManage list vms)
+
