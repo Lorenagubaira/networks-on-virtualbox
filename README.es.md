@@ -12,12 +12,6 @@
 
 Para ésta práctica debes importar una máquina virtual que hemos preparado para ti. Esta mv viene con Debian instalado y trae algunas configuraciones básicas que se utilizan en el proceso de evaluación de éste bootcamp. Haz clic aquí para acceder a los [archivos e instruciones de instalación de la máquina virtual Debian](https://4geeks.com/docs/start/cybersecurity-virtual-machines#debian-virtual-machine).
 
-### Informacion de acceso la máquina Debian
-
-> **Usuario**: `deb`  
-> **Clave**: `123456`  
-> **ClaveRoot**: `123456`  
-
 <!-- hide -->
 
 #### Antes de empezar...
