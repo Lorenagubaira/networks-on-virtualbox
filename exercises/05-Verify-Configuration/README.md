@@ -11,7 +11,7 @@ Two scripts inside the `./assets` folder are in charge of taking the information
 
 Once you have pasted the windows_report.txt into the root of the LearnPack exercises, you can run the test to validate your Linux and Windows installation in VirtualBox.
 
-![Script Windows](../../.learn/assets/script-test.png)
+![Script Windows](https://raw.githubusercontent.com/breatheco-de/networks-on-virtualbox/master/.learn/assets/script-test.png)
 
 ## 4. Done!
 
