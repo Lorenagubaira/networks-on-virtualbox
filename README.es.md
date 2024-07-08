@@ -10,11 +10,7 @@
 *Estas instrucciones [están disponibles en 🇪🇸 español](https://github.com/4GeeksAcademy/networks-on-virtualbox/blob/master/README.es.md) :es:*
 <!-- endhide -->
 
-Para ésta práctica debes importar una máquina virtual que hemos preparado para ti. Esta mv viene con Debian instalado y trae algunas configuraciones básicas que se utilizan en el proceso de evaluación de éste bootcamp. De resto, es una computadora Debian como cualquiera y será un espacio importante donde aprenderás como utilizar sistemas GNU/Linux de forma segura en entornos de red y para su uso como servidor.
-
-## 📝 Instructiones
-
-[Descarga aquí](https://storage.googleapis.com/breathecode/virtualbox/deb.ova) el archivo que debes importar a VirtualBox para crear la máquina virtual Debian. Se trata de un archivo pesado, asi que es recomendable descargarlo con anterioridad para ahorrar tiempo a la hora de hacer la práctica.
+Para ésta práctica debes importar una máquina virtual que hemos preparado para ti. Esta mv viene con Debian instalado y trae algunas configuraciones básicas que se utilizan en el proceso de evaluación de éste bootcamp. Haz clic aquí para acceder a los [archivos e instruciones de instalación de la máquina virtual Debian](https://4geeks.com/docs/start/cybersecurity-virtual-machines#debian-virtual-machine).
 
 ### Informacion de acceso la máquina Debian
 
