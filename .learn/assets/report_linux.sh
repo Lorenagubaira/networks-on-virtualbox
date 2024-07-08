@@ -1,39 +1,22 @@
 #!/bin/bash
 
-# Ruta absoluta de VBoxManage (ejemplo en Windows)
-VBoxManage_path="C:\\Program Files\\Oracle\\VirtualBox\\VBoxManage.exe"
-
-# Verificamos si VBoxManage está instalado y disponible
-if ! [ -x "$VBoxManage_path" ]; then
-    echo "VBoxManage no está instalado o no se encontró en la ubicación especificada."
+# Check if VBoxManage command exists
+if ! command -v VBoxManage &> /dev/null; then
+    echo "VBoxManage command not found. Please install VirtualBox or ensure VBoxManage is in your PATH." >> linux_report.txt
     exit 1
 fi
 
-# Archivo de reporte
-report_file="linux_report.txt"
+# Process each line of VBoxManage list vms output
+while read -r line; do
+  # Extract the name of the virtual machine from the line
+  vm_name=$(echo $line | awk '{print $1}')
+  vm_name=${vm_name//\"/}
 
-echo "Virtual Machine Information" > "$report_file"
-echo "=========================" >> "$report_file"
-echo "" >> "$report_file"
+  # Execute the command for the virtual machine and append the output to linux_report.txt
+  VBoxManage showvminfo "$vm_name" --machinereadable >> linux_report.txt
+  echo "---------" >> linux_report.txt
 
-# Ejecutamos VBoxManage list vms para obtener la lista de máquinas virtuales
-echo "Ejecutando VBoxManage list vms..." >> "$report_file"
-"$VBoxManage_path" list vms >> "$report_file"
-echo "" >> "$report_file"
+  # echo "Información de la máquina virtual $vm_name:"
 
-# Iteramos sobre cada línea de la salida de VBoxManage list vms
-while IFS= read -r line; do
-    # Extraemos el nombre de la máquina virtual de la línea
-    vm_name=$(echo "$line" | awk '{print $1}')
-    vm_name=${vm_name//\"/}
-
-    # Ejecutamos VBoxManage showvminfo para obtener información detallada de la máquina virtual
-    echo "VM Name: $vm_name" >> "$report_file"
-    echo "---------" >> "$report_file"
-    "$VBoxManage_path" showvminfo "$vm_name" --machinereadable >> "$report_file"
-    echo "" >> "$report_file"
-
-done < <("$VBoxManage_path" list vms)
-
-echo "Reporte generado exitosamente: $report_file"
+done < <(VBoxManage list vms)
 
