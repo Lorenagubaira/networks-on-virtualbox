@@ -4,7 +4,7 @@ Sure, here's the translation to Spanish:
 
 Hemos desarrollado dos scripts para ayudarte a medir tu éxito durante este proyecto.
 
-Dos scripts dentro de la carpeta `./assets` se encargan de llevar la información desde VirtualBox de vuelta a LearnPack para su validación.
+Dos scripts dentro de la carpeta `./.learn/assets` se encargan de llevar la información desde VirtualBox de vuelta a LearnPack para su validación.
 
 - `report_linux.sh` será ejecutado automáticamente por LearnPack.
 - `report_windows.bat` debes copiar y pegar este archivo en tu máquina virtual de Windows, ejecutar el archivo, y luego copiar el archivo "windows_report.txt" que genera y pegarlo en la raíz de estos ejercicios de LearnPack para su validación.
