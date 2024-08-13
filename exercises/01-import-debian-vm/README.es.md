@@ -23,6 +23,6 @@ Si por alguna razón no se ejecuta VirtualBox al abrir el archivo OVA, puedes im
 Una vez termine el proceso de importación, estas listo para arrancar tu nueva máquina Debian. La máquina ya viene configurada con claves de acceso, pero como buen estudiante de ciberseguridad, sabes que deberías cambiarlas por alguna más segura.
 
 > **Información de acceso**<br>
-**Usuario**: deb<br>
+**Usuario**: debian<br>
 **Clave**: 123456<br>
 **ClaveRoot**: 123456
