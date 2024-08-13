@@ -23,6 +23,6 @@ If for some reason VirtualBox does not run when you open the OVA file, you can i
 Once the import process is finished, you are ready to boot your new Debian machine. The machine comes already configured with passwords, but as a good student of cybersecurity, you know that you should change them to a more secure one.
 
 > **Login info **<br>
-**user**: deb<br>
+**user**: debian<br>
 **Password**: 123456<br>
 **RootPassword**: 123456
