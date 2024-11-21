@@ -8,17 +8,15 @@
 [![build by developers](https://img.shields.io/twitter/follow/4geeksacademy?style=social&logo=twitter)](https://twitter.com/4geeksacademy)
 
 *Estas instrucciones [están disponibles en 🇪🇸 español](https://github.com/4GeeksAcademy/networks-on-virtualbox/blob/master/README.es.md)*
-<!-- endhide -->
-
-For this project, you must import a virtual machine we have prepared. It comes with Debian installed and some basic settings that will be used during the bootcamp. Click here to access the machine files and [Debian installation instructions](https://4geeks.com/docs/start/cybersecurity-virtual-machines#debian-virtual-machine).
-
-<!-- hide -->
 
 ## Before you start...
 
 > We need you! These exercises are built and maintained in collaboration with contributors such as yourself. If you find any bugs or misspellings please contribute and/or report them.
-
 <!-- endhide -->
+
+For this project, you must import a virtual machine we have prepared. It comes with Debian installed and some basic settings that will be used during the bootcamp. Click here to access the machine files and [Debian installation instructions](https://4geeks.com/docs/start/cybersecurity-virtual-machines#debian-virtual-machine).
+
+<onlyfor saas="true" withBanner="true">
 
 ## 🌱 How to start this project.
 
@@ -35,6 +33,8 @@ $ npm i @learnpack/learnpack -g
 ```bash
 $ learnpack start
 ```
+</onlyfor>
+
 <!--hide-->
 
 ## Contributors
