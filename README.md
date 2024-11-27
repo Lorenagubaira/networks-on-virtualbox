@@ -16,7 +16,7 @@
 
 For this project, you must import a virtual machine we have prepared. It comes with Debian installed and some basic settings that will be used during the bootcamp. Click here to access the machine files and [Debian installation instructions](https://4geeks.com/docs/start/cybersecurity-virtual-machines#debian-virtual-machine).
 
-<onlyfor saas="true" withBanner="false">
+<onlyfor saas="false" withBanner="false">
   
 ## 🌱 How to start this project.
 
