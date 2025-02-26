@@ -16,11 +16,11 @@
 
 Para ésta práctica debes importar una máquina virtual que hemos preparado para ti. Esta mv viene con Debian instalado y trae algunas configuraciones básicas que se utilizan en el proceso de evaluación de éste bootcamp. Haz clic aquí para acceder a los [archivos e instruciones de instalación de la máquina virtual Debian](https://4geeks.com/docs/start/cybersecurity-virtual-machines#debian-virtual-machine).
 
-<onlyfor saas="false" withBanner="false">
+<how-to-start>
 
 ## 🌱 ¿Cómo empezar este proyecto?
 
-Clona el repositorio en la maquina de debian local y sigue los siguientes pasos:
+Clona el [repositorio](https://github.com/breatheco-de/networks-on-virtualbox) en la maquina de debian local y sigue los siguientes pasos:
 
 1. Instala LearnPack, el package manager para tutoriales de aprendizaje y el HTML compiler plugin para LearnPack, asegúrate también de tener node.js 14+:
 
@@ -33,7 +33,7 @@ $ npm i @learnpack/learnpack -g
 ```bash
 $ learnpack start
 ```
-</onlyfor>
+</how-to-start>
 
 <!--hide-->
 ## Colaboradores
